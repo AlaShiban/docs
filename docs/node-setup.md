@@ -143,7 +143,7 @@ function handler(event, context, callback) {
         callback(null, "Hello World");
 }
 
-exports.handler = rookout.wrap(handler, {labels={"env":"dev"})};
+exports.handler = rookout.wrap(handler, {labels: {env:"dev"}});
 ```
 
 **Note:** Adding the Rookout SDK will slow down your Serverless cold-start times. Please make sure your timeout is no less then 10 seconds.
